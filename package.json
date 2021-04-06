@@ -1,0 +1,30 @@
+{
+  "name": "@finastra/ssr-pages",
+  "version": "0.1.1",
+  "contributors": [
+    "David Boclé <david.bocle@finastra.com>",
+    "Francine Ong <francine.ong@finastra.com>"
+  ],
+  "main": "dist/index.js",
+  "files":["dist/"],
+  "scripts": {
+    "prebuild": "npm run copy:assets",
+    "build": "tsc -p .",
+    "predev":"npm run build",
+    "dev":"node scripts/test",
+    "copy:assets": "cpx -v \"src/assets/**/*\" dist/src/assets && cpx -v \"src/assets/**/*\" dist/assets"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Finastra/ssr-pages.git"
+  },
+  "dependencies": {
+    "handlebars": "^4.7.7"
+  },
+  "devDependencies": {
+    "@types/node": "^13.7.4",
+    "cpx": "^1.5.0",
+    "typescript": "^3.7.4"
+  }
+}
