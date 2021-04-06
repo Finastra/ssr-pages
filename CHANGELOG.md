@@ -8,6 +8,10 @@
 
 <!-- /TOC -->
 
+## 2021-04-06
+
+- Move to a dedicated `finastra/ssr-pages` repo
+
 ## 2021-03-24
 
-Fixed styling to hide the Finastra ribbon for mobile pages
+- Fixed styling to hide the Finastra ribbon for mobile pages
