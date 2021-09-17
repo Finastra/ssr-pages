@@ -8,10 +8,14 @@
 
 <!-- /TOC -->
 
-## 2021-04-06
+## 0.1.3 (2021-09-17)
+
+- Fixed `redirect.link` encoding
+
+## 0.1.2 (2021-04-06)
 
 - Move to a dedicated `finastra/ssr-pages` repo
 
-## 2021-03-24
+## 0.1.1 (2021-03-24)
 
 - Fixed styling to hide the Finastra ribbon for mobile pages
