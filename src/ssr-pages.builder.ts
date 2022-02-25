@@ -3,6 +3,7 @@ import * as handlebars from 'handlebars';
 import { join } from 'path';
 import background from './helpers/background.helper';
 import inlineSVG from './helpers/inlineSVG.helper';
+import { stringEncode } from './helpers/string-encoder.helper';
 import { MessagePageOptions } from './ssr-pages.interface';
 
 export class SSRPages {
@@ -25,6 +26,7 @@ export class SSRPages {
   }
 
   build(msgPageOpts: MessagePageOptions) {
+    msgPageOpts.redirect.link = stringEncode(msgPageOpts.redirect.link);
     return this.templateMessagePage(msgPageOpts);
   }
 }
