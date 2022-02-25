@@ -8,6 +8,11 @@
 
 <!-- /TOC -->
 
+## 0.1.4 (2022-02-25)
+
+- Fix path traversal vulnerabilityv
+- Fix XSS vulnerability
+
 ## 0.1.3 (2021-09-17)
 
 - Fixed `redirect.link` encoding
