@@ -8,6 +8,10 @@
 
 <!-- /TOC -->
 
+## 0.1.5 (2022-02-28)
+
+- Fix string encoder
+
 ## 0.1.4 (2022-02-25)
 
 - Fix path traversal vulnerabilityv
