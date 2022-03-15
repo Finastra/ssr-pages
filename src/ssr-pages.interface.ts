@@ -13,6 +13,7 @@ export interface RedirectOptions {
   /** Whether the page will auto-redirect to another uri after x seconds */
   auto?: boolean;
   link: string;
+  encodedLink?: string;
   label?: string;
 }
 
