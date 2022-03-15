@@ -26,7 +26,7 @@ export class SSRPages {
   }
 
   build(msgPageOpts: MessagePageOptions) {
-    msgPageOpts.redirect.link = stringEncode(msgPageOpts.redirect.link);
+    msgPageOpts.redirect.encodedLink = stringEncode(msgPageOpts.redirect.link);
     return this.templateMessagePage(msgPageOpts);
   }
 }
